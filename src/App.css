@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+:root {
+  --mainPurple:#452358;
+  --lightPurple:#b079cfce;
+  --mainWhite:#f3f3f3;
+  --mainDark:#232528;
+  --mainGreen:#1d8308;
+  --lightGreen: #36ec11a8;
+}
+body{
+  font-family: 'Montserrat', sans-serif !important;
+  background: var(--mainWhite) !important;
+  color:var(--mainDark) !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.text-title{
+  font-family: 'Open Sans', sans-serif;
+text-transform: uppercase;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.text-purple{
+  color: var(--mainPurple);
+}
+.text-bright{
+  color: var(--lightPurple);
+}
+
+.btn-delete{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color:var(--mainDark);
+  border-radius: 1 !important;
+  border: 0.1rem solid red !important;
+}
+
+.btn-add {
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 0.8rem !important;
+  color:var(--mainDark);
+  border-radius: 1 !important;
+  border: 0.1rem solid var(--mainGreen) !important;
+}
+
+.btn-black:hover{
+  background: var(--mainDark) !important;
+  color: var(--mainWhite) !important;
+}
+
+.btn-increment{
+  background: transparent;
+  text-transform: capitalize;
+  font-size: 1rem !important;
+  color:var(--mainPurple);
+  
+}
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color:var(--lightPurple);
+}
+
+.img-fix{
+  position: relative;
+  bottom: 20px;
+}
+@media only screen and (max-width: 990px) {
+  .img-fix{
+    position: relative;
+    bottom: 0px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
